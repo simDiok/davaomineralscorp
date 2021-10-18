@@ -14,7 +14,13 @@ class CreateSetupsTable extends Migration
     public function up()
     {
         Schema::create('setups', function (Blueprint $table) {
-            $table->id();
+            $table->increments('sid');
+            $table->string('logo');
+            $table->string('meta_title');
+            $table->string('contact');
+            $table->string('address');
+            $table->string('email');
+            $table->string('social');
             $table->timestamps();
         });
     }
