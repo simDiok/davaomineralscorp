@@ -11,6 +11,10 @@ class PagesController extends Controller
     }
 
     public function admin(){
-        return view('backend.index');
+        return view('auth.login');
+    }
+
+    public function register(){
+        return view('auth.register');
     }
 }

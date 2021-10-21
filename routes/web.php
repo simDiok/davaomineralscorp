@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +15,11 @@ use App\Http\Controllers;
 */
 
 Route::get('/', 'PagesController@index');
-Route::get('admin', 'PagesController@admin');
+Route::get('register', 'PagesController@register');
 
+Route::get('admin' , 'PagesController@admin');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
