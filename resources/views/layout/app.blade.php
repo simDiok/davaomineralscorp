@@ -80,8 +80,8 @@
                   </a>
                </li>
                <li class="to-section">
-                  <a href="#team">
-                     Team
+                  <a href="/updates">
+                     Updates
                   </a>
                </li>
                <li class="to-section">
