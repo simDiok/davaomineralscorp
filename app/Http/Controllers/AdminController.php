@@ -21,4 +21,9 @@ class AdminController extends Controller
     public function resetpassword(){
         return view('auth.reset-password');
     }
+
+    public function dashboard(){
+        return view('auth.dashboard');
+    }
+
 }

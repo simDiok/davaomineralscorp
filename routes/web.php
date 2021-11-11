@@ -19,6 +19,7 @@ Route::get('/', 'PagesController@index');
 
 Route::get('register', 'AdminController@register');
 Route::get('admin' , 'AdminController@admin');
+Route::get('admin/dashboard' , 'AdminController@dashboard');
 Route::get('forgot-password', 'AdminController@forgotpassword');
 Route::get('reset-password', 'AdminController@resetpassword');
 
